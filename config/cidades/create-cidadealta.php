@@ -11,7 +11,7 @@ $local = $_POST['local'];
 $arquivo = $_FILES['image'];
 
 $arquivoNovo = explode('.', $arquivo['name']);
-move_uploaded_file($arquivo['tmp_name'], '../../image/cidade'.$arquivo['name']);
+move_uploaded_file($arquivo['tmp_name'], '../../image/cidade/'.$arquivo['name']);
 
 $image = '/image/cidade/'.$arquivo['name'];
 
@@ -23,6 +23,6 @@ $stmt->bindParam(":LOCAL", $local);
 echo "$name $link $description $local $image";
 $stmt->execute();
 
-//header('Location: ../admin/view-cast.php');
+header('Location: ../../admin/view-cast.php');
 
 ?>

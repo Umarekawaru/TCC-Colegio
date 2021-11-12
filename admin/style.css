@@ -25,4 +25,7 @@ button{
   	padding: 0.3rem 0.6rem;
   	margin-top: 0px;
   }
+  #sidebarMenu{
+  	height: auto;
+  }
 }

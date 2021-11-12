@@ -29,7 +29,7 @@ $re = $stmt->fetchALL(PDO::FETCH_ASSOC);
 							  <td scope="row" class="text-capitalize"><?=$post['local']?></td>
 							  <td scope="action">
 							  	<a href="cidade-update.php?id=<?=$post['id']?>" title="">Editar</a>
-							  	<a href="../config/delete-products.php?id=<?=$post['id']?>">Excluir</a>
+							  	<a href="../config/cidades/delete-cidadealta.php?id=<?=$post['id']?>">Excluir</a>
 							  </td>
 							</tr>
 					   	<?php endforeach;?>
@@ -37,4 +37,4 @@ $re = $stmt->fetchALL(PDO::FETCH_ASSOC);
 			</table>
 		</main>
 		<!-- </editar postagens> -->
-	<?php include_once('footer.php?enviado=falhou'); ?>
+	<?php // include_once('footer.php?'); ?>

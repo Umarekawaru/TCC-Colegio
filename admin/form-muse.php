@@ -12,7 +12,7 @@ $resul = $st->fetchALL(PDO::FETCH_ASSOC);
 ?>
 
 <main class="col-md-9 col-lg-10 p-4">
-	<h1 id="main-title" class="text-center">Atualizar Sobre Mim</h1>
+	<h1 id="main-title" class="text-center">Cadastrar Museus, Ilhas e Fortes</h1>
 	<div class="input-group justify-content-center">	
 	<form action="../config/update-home.php" method="POST" enctype="multipart/form-data" accept-charset="utf-8">
 		<?php foreach ($resul  as $home):?>

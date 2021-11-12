@@ -6,6 +6,7 @@
 	<title></title>
   	<link rel="stylesheet" type="text/css" href="css/style.css">
   	<link rel="stylesheet" type="text/css" href="css/image.css">
+  	<link rel="stylesheet" type="text/css" href="css/responsivr.css">
 	<?php include_once("css/header.php") ?>
 	<style type="text/css" media="screen">
 		.card img{
@@ -36,13 +37,13 @@
 			<?php foreach ($results as $baixa):  ?>
 		  <div class="col">
 		    <div class="card h-100">
-		      <img src="<?=$baixa['image']?>" class="card-img-top img-thumbnail" alt="...">
+		      <img src="<?=$baixa['image']?>" class="card-img-top" alt="...">
 		      <div class="card-body text-center just">
 		        <h5 class="card-title"><?=$baixa['nome']?></h5>
 		        <p class="card-text lh-1 text-break"><?=$baixa['description']?></p>
 		      </div>
 		      <div class="card-footer">
-		        <small class="text-muted">GPS <?=$baixa['link']?></small>
+		        <small class="text-muted"><a href="<?=$baixa['link']?>" title="como chegar" target="_BLANK">Click Aqui Para saber mais!</a></small>
 		      </div>
 		    </div>
 		  </div>

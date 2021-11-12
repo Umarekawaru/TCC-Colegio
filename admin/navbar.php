@@ -13,15 +13,15 @@
 			<a href="view-cast.php">Dashboard</a>
 		</li>
 		<li class="nav-item">
-			<a href="form-products.php">Cadastrar Cidade/Museu/Forte</a>
+			<a href="form-cidade.php">Cadastrar Cidade/Museu/Forte</a>
 		</li>
 		<li class="nav-item">
-			<a href="form-home-slide.php">Atualizar Slides</a>
+			<a href="form-equipe.php">Atualizar sobre a equipe</a>
 		</li>
 		<li class="nav-item">
-			<a href="form-home.php">Atualizar Sobre Equipe</a>
+			<a href="form-muse.php">Cadrastrar Museus, Ilhas e Fortes</a>
 		</li>
-		<form action="../config/deslogar.php">
+		<form action="deslogar.php">
 		<li class="nav-item mb-2">
 			<a href="deslogar.php" name="sair" value="1">Sair</a>
 		</li>

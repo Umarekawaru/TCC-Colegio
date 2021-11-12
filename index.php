@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Salvador</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="image.css">
+  <link rel="stylesheet" type="text/css" href="css/responsivr.css">
 	<?php include_once("css/header.php") ?>
 </head>
 <body>
@@ -20,7 +22,7 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="image/image-slide/slide01.jpg" class="d-block w-60  " alt="...">
-      <div class=" d-none fw-bolder d-md-block">
+      <div class=" d-none carousel-caption d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
@@ -51,7 +53,7 @@
 </div>
 </section>
 <section id="about" class="blue-b">
-			<div class="container flex-center responsive-wrap justify-content-evenly">
+			<div class="container flex-center responsive-wrap responsive-ali justify-content-evenly">
 				<img id="about-img" src="image/sobre/architecture-3323275_640.jpg" alt="">
 				<div class="about">
 				<h1 class="titulo">Sobre elas</h1>

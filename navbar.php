@@ -7,8 +7,8 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" aria-current="page" href="index.php">Home</a>
+        <a class="nav-link" href="cidade.php?cidade=alta">Cidade Alta</a>
         <a class="nav-link" href="cidade.php?cidade=baixa">Cidade Baixa</a>
-        <a class="nav-link" href="cidade.php?cidade=alta">Cidade alta</a>
         <a class="nav-link" href="admin/">Login Equipe</a>
       </div>
     </div>
