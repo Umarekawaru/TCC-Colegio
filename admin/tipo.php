@@ -12,7 +12,7 @@ if ($tipo == "cidade") {
 		$editar = "cidade-update.php?";
 		$delete = "../config/cidades/delete-cidadealta.php?";
 }else{
-		$stmt = $conn->prepare("SELECT * FROM loca ");
+		$stmt = $conn->prepare("SELECT * FROM local ");
 		$stmt->execute();
 		$re = $stmt->fetchALL(PDO::FETCH_ASSOC);
 		$editar = "muse-update.php?";

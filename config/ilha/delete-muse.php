@@ -5,7 +5,7 @@ include_once('../conec/connect.php');
 $id = $_GET['id'];
 
 
-$stmt= $conn->prepare("DELETE FROM loca WHERE id= :ID");
+$stmt= $conn->prepare("DELETE FROM local WHERE id= :ID");
  
 $stmt->bindParam(":ID", $id);
 $stmt->execute();
