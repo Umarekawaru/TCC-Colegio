@@ -66,8 +66,8 @@
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
           <div class="card">
-            <a href="cidade.php?cidade=alta" title="">
-            <img src="image/card-fixos/cidade-alta.jpg" class="card-img-top" alt="cidade-alta">
+            <a href="cidade.php?cidade=baixa" title="">
+            <img src="image/card-fixos/cidade-baixa.jpg" class="card-img-top" alt="cidade-alta">
             </a>
             <div class="card-body green-b">
               <h5 class="card-title text-center">Cidade Baixa</h5>
@@ -77,8 +77,8 @@
         </div>
         <div class="col">
           <div class="card">
-            <a href="cidade.php?cidade=baixa" title="" id="ima-hover">
-            <img src="image/card-fixos/cidade-baixa.jpg" class="card-img-top" alt="cidade-baixa">
+            <a href="cidade.php?cidade=alta" title="" id="ima-hover">
+            <img src="image/card-fixos/cidade-alta.jpg" class="card-img-top" alt="cidade-baixa">
             </a>
             <div class="card-body green-b">
               <h5 class="card-title text-center">Cidade Alta</h5>
@@ -92,7 +92,7 @@
             <img src="image/card-fixos/forte.jpg" class="card-img-top" alt="...">
             </a>
             <div class="card-body green-b">
-              <h5 class="card-title text-center">Forte/Moseus</h5>
+              <h5 class="card-title text-center">Forte</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
             </div>
           </div>
@@ -102,7 +102,7 @@
             <a href="" title="">
             <img src="image/card-fixos/ilha.jpg" class="card-img-top" alt="...">
             </a><div class="card-body green-b">
-              <h5 class="card-title text-center">Ihas</h5>
+              <h5 class="card-title text-center">Museus</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
           </div>

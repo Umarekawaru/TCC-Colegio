@@ -24,7 +24,7 @@
 	$stmt->execute(array('ID' => $id));
 	$results = $stmt->fetchALL(PDO::FETCH_ASSOC);
 	}else{
-		header('Location: index.php')
+		header('Location: index.php');
 	};
 
 ?>

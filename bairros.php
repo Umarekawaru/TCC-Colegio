@@ -16,9 +16,9 @@
 <?php include_once("navbar.php") ?>
 <?php 
 	include_once("conec/connect.php");
-	$id = $_GET['bairro'];
+	$id = $_GET['bairro']??"museo";
 
-	$stmt = $conn->prepare("SELECT * FROM cidade WHERE local = :ID LIMIT 0,9");
+	$stmt = $conn->prepare("SELECT * FROM local WHERE local = :ID LIMIT 0,9");
 	$stmt->execute(array('ID' => $id));
 	$results = $stmt->fetchALL(PDO::FETCH_ASSOC);
 	//SEPARAÇÃO O DE CIMA É DO SOBRE MIM E O DE BAIXO É DO SLIDE
@@ -27,28 +27,36 @@
 
 	<section id="image" class="flex-center">
 				<div id="text-image">
-					<h2 class="titlemid">Bem vindo aos <?php if ($id == 'alta') {echo "Alta"; }elseif(){ }else{echo "Baixa";}?></h2>
+					<h2 class="titlemid">Bem vindo aos 
+					<?php
+					 if ($id == 'museo') {
+					 	echo "Museo"; 
+					}else{
+						echo "Forte";
+					}?>
+						
+					</h2>
 				</div>
 		</section>
-	<section class="container">
-	
+	<section class="blue-b">
+	<div class="container">
 		<div class="row row-cols-1 row-cols-md-3 g-4">
 			<?php foreach ($results as $baixa):  ?>
 		  <div class="col">
 		    <div class="card h-100">
-		      <img src="<?=$baixa['image']?>" class="card-img-top img-thumbnail" alt="...">
-		      <div class="card-body">
+		      <img src="<?=$baixa['image']?>" class="card-img-top" alt="...">
+		      <div class="card-body text-center just">
 		        <h5 class="card-title"><?=$baixa['nome']?></h5>
-		        <p class="card-text lh-1"><?=$baixa['description']?></p>
+		        <p class="card-text lh-1 text-break"><?=$baixa['description']?></p>
 		      </div>
 		      <div class="card-footer">
-		        <small class="text-muted">GPS <?=$baixa['link']?></small>
+		        <small class="text-muted"><a href="<?=$baixa['link']?>" title="como chegar" target="_BLANK">Click Aqui Para saber mais!</a></small>
 		      </div>
 		    </div>
 		  </div>
 		  <?php endforeach; ?>
 		</div>
-	
+	</div>
 	</section>
 
 <?php include("footer.php") ?>
