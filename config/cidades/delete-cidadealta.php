@@ -12,6 +12,6 @@ $stmt->execute();
 
 echo "O $id foi apagado com sucesso!";
 
-header('Location: ../../admin/view-cast.php');
+header('Location: ../../admin/view-cast.php?tipo=cidade');
 
 ?>

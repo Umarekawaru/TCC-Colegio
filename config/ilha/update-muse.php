@@ -24,6 +24,6 @@ $stmt->bindParam(':IMAGE', $image);
 $stmt->bindParam(':DESCRIPTION', $description);
 $stmt->execute();
 
-	header('Location: ../admin/view-cast.php');
+	header('Location: ../admin/view-cast.php?tipo=local');
 
 ?>

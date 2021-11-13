@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,10 +19,14 @@
 	include_once("conec/connect.php");
 	$id = $_GET['cidade'];
 
+	if (isset($id)) {
 	$stmt = $conn->prepare("SELECT * FROM cidade WHERE local = :ID LIMIT 0,9");
 	$stmt->execute(array('ID' => $id));
 	$results = $stmt->fetchALL(PDO::FETCH_ASSOC);
-	//SEPARAÇÃO O DE CIMA É DO SOBRE MIM E O DE BAIXO É DO SLIDE
+	}else{
+		header('Location: index.php')
+	};
+
 ?>
 <body>
 

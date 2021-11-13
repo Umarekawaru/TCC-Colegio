@@ -17,7 +17,7 @@
 			</div>
 			<div class="input-group">
 			  <span class="input-group-text">Descrição</span>
-			  <textarea class="form-control" name="description" aria-label="Descrição do local"></textarea>
+			  <textarea class="form-control" name="description" maxlength="400" aria-label="Descrição do local"></textarea>
 			</div>
 			<button type="submit" value="ENVIAR"class="btn btn-primary mt-3">Enviar</button>
 		</form>

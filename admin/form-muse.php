@@ -1,35 +1,27 @@
-<?php include_once('header.php'); ?>
+	<?php include_once('header.php'); ?>
 
-<?php include_once('navbar.php'); ?>
-
-<?php
-
-$st=$conn->prepare("SELECT title, description, image FROM home WHERE id = :ID");
-//Para ativar a troca de titulo coloque acima title, e ative em baixo logo em seguida vá para o arquivo de alteração e faça o que é pedido
-$st->execute(array('ID' => '1'));
-
-$resul = $st->fetchALL(PDO::FETCH_ASSOC);
-?>
-
-<main class="col-md-9 col-lg-10 p-4">
-	<h1 id="main-title" class="text-center">Cadastrar Museus, Ilhas e Fortes</h1>
-	<div class="input-group justify-content-center">	
-	<form action="../config/update-home.php" method="POST" enctype="multipart/form-data" accept-charset="utf-8">
-		<?php foreach ($resul  as $home):?>
-		<input type="text" name="title" value=""class="input-group form-control" placeholder="<?=$home["title"]?>">
-		<div class="input-group">
-		  <input type="file" name="image" class="input-group form-control" id="inputGroupFile02">
-		</div>
-		<div class="input-group">
-		  <span class="input-group-text">Insira Sua</br> Nova Descrição</span>
-		  <textarea class="form-control" name="description"aria-label="With textarea" placeholder="<?=$home['description']?>"></textarea>
-		</div>
-		<button type="submit" name="id" value="1" class="btn btn-primary mb-3">Enviar</button>
-		<img src="../<?=$home["image"]?>" class="img-thumbnail rounded float-end" alt="Imagem Existente" width="200px">
-		<?php 	endforeach;	 ?>
+	<?php include_once('navbar.php'); ?>
+	<main class="col-md-9 col-lg-10 p-4">
+		<h1 id="main-title" class="text-center">Cadastrar Ilha/Museu/Forte</h1>
+		<div class="input-group justify-content-center">
+		<form action="../config/ilha/create-muse.php" method="POST" enctype="multipart/form-data" accept-charset="utf-8">
+			<input type="text" name="nome" class="input-group form-control" placeholder="Nome do Local">
+			<select class="form-select" aria-label="Default select example" name="local" id="local">
+			  	<option selected>Selecione o Tipo</option>
+			  	<option value="museo">Museo</option>
+			  	<option value="ilha">Ilha</option>
+			  	<option value="forte">Forte</option>
+			</select>
+			<input type="text" name="link" class="input-group form-control" placeholder="Insira aqui o link do local via google maps"><br>
+			<div class="input-group">	
+			  <input type="file" name="image" class="input-group form-control" id="inputGroupFile02"><span>Recomendado recorta a imagem para o formato 416x300</span>
+			</div>
+			<div class="input-group">
+			  <span class="input-group-text">Descrição</span>
+			  <textarea class="form-control" name="description" maxlength="400" aria-label="Descrição do local"></textarea>
+			</div>
+			<button type="submit" value="ENVIAR"class="btn btn-primary px-3">Enviar</button>
 		</form>
 	</div>
 	</main>
-</main>
-
-<?php include_once('footer.php'); ?>
+	<?php include_once('footer.php'); ?>

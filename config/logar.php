@@ -18,7 +18,7 @@ if($stmt->rowCount()==1){
     $_SESSION['login'] = $info['login'];
     $_SESSION['senha'] = $info['senha'];
 
-    header("Location:../admin/view-cast.php");
+    header("Location:../admin/view-cast.php?tipo=cidade");
 }else{
     echo "Usario não encontrado";
 }

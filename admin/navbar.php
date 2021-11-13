@@ -10,10 +10,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
 	<ul class="nav flex-column">
 		<li class="nav-item">
-			<a href="view-cast.php">Dashboard</a>
+			<a href="view-cast.php?tipo=cidade">Dashboard</a>
 		</li>
 		<li class="nav-item">
-			<a href="form-cidade.php">Cadastrar Cidade/Museu/Forte</a>
+			<a href="form-cidade.php">Cadastrar Cidade</a>
 		</li>
 		<li class="nav-item">
 			<a href="form-equipe.php">Atualizar sobre a equipe</a>

@@ -1,6 +1,6 @@
 <?php
-include_once('../../conec/connect.php');
- $stmt = $conn->prepare("INSERT INTO cidade (nome, description, link, image, local) 
+ include_once('../../conec/connect.php');
+ $stmt = $conn->prepare("INSERT INTO loca (nome, description, link, image, local) 
     VALUES(:NAME, :DESCRIPTION, :LINK, :IMAGE, :LOCAL )");
 
 $name = $_POST['nome'];
@@ -20,9 +20,6 @@ $stmt->bindParam(":LINK", $link);
 $stmt->bindParam(":DESCRIPTION", $description);
 $stmt->bindParam(":IMAGE", $image);
 $stmt->bindParam(":LOCAL", $local);
-echo "$name $link $description $local $image";
 $stmt->execute();
-
-header('Location: ../../admin/view-cast.php?tipo=cidade');
-
+header('Location: ../../admin/view-cast.php?tipo=local');
 ?>

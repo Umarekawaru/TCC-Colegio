@@ -24,6 +24,6 @@ $stmt->bindParam(":IMAGE", $image);
 $stmt->bindParam(":LOCAL", $local);
 $stmt->execute();
 //echo "$name $link $description $local $image";
-header('Location: ../../admin/view-cast.php');
+header('Location: ../../admin/view-cast.php?tipo=cidade');
 
 ?>
