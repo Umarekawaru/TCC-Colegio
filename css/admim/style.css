@@ -1,0 +1,101 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+h1{
+	font-family: 'Rammetto One', cursive;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+h2{
+	font-family: 'Rammetto One', cursive;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.container{
+    max-width: 1170px;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Aqui CSS da NAVBAR*/
+.navbar{
+	background: rgba(237, 160, 12, 0.6);
+	width: 100%;
+	font-family:'Poppins', sans-serif;
+}
+.color{
+	background: #F78D0C !important;
+	margin: 0 auto;
+}
+.navbar-toggler{
+	background-color: rgba(255, 255, 255, 0.5) !important;
+}
+.nav-item{
+	font-size: 18px;
+	font-weight: 500;
+}
+.nav-link{
+	color: black !important;
+	margin-left: 25px;
+}
+.nav-link:hover{
+	color: #C42430 !important;
+}
+
+/*Aqui CSS do Sobre-mim*/
+.info{
+	background-color: rgba(247, 141, 12, 0.8) !important;
+	padding: 15px 0;
+}
+
+/*Aqui CSS dos Cards Tripo*/
+.card img{
+	max-width: 320px;
+	max-height: 223px;
+	margin: 0 auto;
+}
+.card-title{
+	font-size: 26px !important;
+	color: red;
+}
+#instra, .card-inst{
+	background-color: rgba(237, 160, 12, 0.8) !important;
+	padding: 10px;
+}
+/*Aqui CSS do footer*/
+.footer{
+	background-color: #F78D0C;
+	color: black;
+	padding: -2px 0;
+}
+footer p{
+	font-size: 12px;
+	color: black;
+}
+.font-fot{
+	font-size: 20px !important;
+}
+.bi{
+	padding: 5px !important;
+}
+#btn-whatsapp{ 
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	z-index: 2;
+	font-size: 2rem;
+	background-color: #25D366 !important; 
+	border-radius: 50px; 
+	height: 45px; 
+	padding: 6px 2px;
+	line-height: 1px; 
+	background-size: 100%;
+}
+.bi-whatsapp{
+	color: whitesmoke;
+}

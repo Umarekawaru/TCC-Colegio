@@ -9,7 +9,6 @@
 			<select class="form-select" aria-label="Default select example" name="local" id="local">
 			  	<option selected>Selecione o Tipo</option>
 			  	<option value="museo">Museo</option>
-			  	<option value="ilha">Ilha</option>
 			  	<option value="forte">Forte</option>
 			</select>
 			<input type="text" name="link" class="input-group form-control" placeholder="Insira aqui o link do local via google maps"><br>

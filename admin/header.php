@@ -1,6 +1,14 @@
 <?php
 include('../conec/connect.php');
 
+$id = 
+
+$stmt = $conn->prepare("SELECT * FROM cidade");
+$stmt->execute();
+
+$results = $stmt->fetchALL(PDO::FETCH_ASSOC);
+?>
+<?php
 session_start();
 if ($_SESSION['logado'] != true) {
 	session_destroy();

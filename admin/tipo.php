@@ -16,7 +16,7 @@ if ($tipo == "cidade") {
 		$stmt->execute();
 		$re = $stmt->fetchALL(PDO::FETCH_ASSOC);
 		$editar = "muse-update.php?";
-		$delete = "../config/ilha/delete-ilha.php?";
+		$delete = "../config/ilha/delete-muse.php?";
 }
 /*switch ($tipo) :
 	case "cidade":
@@ -26,8 +26,8 @@ if ($tipo == "cidade") {
 		$editar = "cidade-update.php?";
 		$delete = "../config/cidades/delete-cidadealta.php?";
 		break;
-	case "loca":
-		$stmt = $conn->prepare("SELECT * FROM loca ");
+	case "local":
+		$stmt = $conn->prepare("SELECT * FROM local ");
 		$stmt->execute();
 		$re = $stmt->fetchALL(PDO::FETCH_ASSOC);	
 		$editar = "muse-update.php?";

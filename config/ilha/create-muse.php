@@ -1,6 +1,6 @@
 <?php
  include_once('../../conec/connect.php');
- $stmt = $conn->prepare("INSERT INTO loca (nome, description, link, image, local) 
+ $stmt = $conn->prepare("INSERT INTO local (nome, description, link, image, local) 
     VALUES(:NAME, :DESCRIPTION, :LINK, :IMAGE, :LOCAL )");
 
 $name = $_POST['nome'];
@@ -11,9 +11,9 @@ $local = $_POST['local'];
 $arquivo = $_FILES['image'];
 
 $arquivoNovo = explode('.', $arquivo['name']);
-move_uploaded_file($arquivo['tmp_name'], '../../image/cidade/'.$arquivo['name']);
+move_uploaded_file($arquivo['tmp_name'], '../../image/muse/'.$arquivo['name']);
 
-$image = '/image/cidade/'.$arquivo['name'];
+$image = '/image/muse/'.$arquivo['name'];
 
 $stmt->bindParam(":NAME", $name);
 $stmt->bindParam(":LINK", $link);

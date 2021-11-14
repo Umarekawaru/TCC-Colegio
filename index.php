@@ -77,7 +77,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <a href="cidade.php?cidade=alta" title="" id="ima-hover">
+            <a href="cidade.php?cidade=alta" id="ima-hover">
             <img src="image/card-fixos/cidade-alta.jpg" class="card-img-top" alt="cidade-baixa">
             </a>
             <div class="card-body green-b">
@@ -88,8 +88,8 @@
         </div>
         <div class="col">
           <div class="card">
-            <a href="" title="">
-            <img src="image/card-fixos/forte.jpg" class="card-img-top" alt="...">
+            <a href="bairros.php?bairro=forte" title="">
+            <img src="image/card-fixos/forte.jpg" class="card-img-top" alt="Aperte aqui para ir pro forte">
             </a>
             <div class="card-body green-b">
               <h5 class="card-title text-center">Forte</h5>
@@ -99,8 +99,8 @@
         </div>
         <div class="col">
           <div class="card">
-            <a href="" title="">
-            <img src="image/card-fixos/ilha.jpg" class="card-img-top" alt="...">
+            <a href="bairros.php?bairro=museo" title="">
+            <img src="image/card-fixos/ilha.jpg" class="card-img-top" alt="Aperte aqui para ir pro museo">
             </a><div class="card-body green-b">
               <h5 class="card-title text-center">Museus</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>

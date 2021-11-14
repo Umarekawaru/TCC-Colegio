@@ -17,16 +17,19 @@
 <?php include_once("navbar.php") ?>
 <?php 
 	include_once("conec/connect.php");
-	$id = $_GET['cidade'];
+	$id = $_GET['cidade']??"none";
 
-	if (isset($id)) {
+	if ($id == "alta") {
 	$stmt = $conn->prepare("SELECT * FROM cidade WHERE local = :ID LIMIT 0,9");
 	$stmt->execute(array('ID' => $id));
 	$results = $stmt->fetchALL(PDO::FETCH_ASSOC);
-	}else{
+	}elseif ($id == "baixa"){
+		$stmt = $conn->prepare("SELECT * FROM cidade WHERE local = :ID LIMIT 0,9");
+	$stmt->execute(array('ID' => $id));
+	$results = $stmt->fetchALL(PDO::FETCH_ASSOC);
+	}else {
 		header('Location: index.php');
 	};
-
 ?>
 <body>
 
@@ -47,7 +50,8 @@
 		        <p class="card-text lh-1 text-break"><?=$baixa['description']?></p>
 		      </div>
 		      <div class="card-footer">
-		        <small class="text-muted"><a href="<?=$baixa['link']?>" title="como chegar" target="_BLANK">Click Aqui Para saber mais!</a></small>
+		        <small class="text-muted"><a href="<?=$baixa['link']?>" title="como chegar" target="_BLANK">Click aqui para GPS!</a></small>
+		        <small class="text-muted" style="float: right;">Click aqui para ver em<a href="<?=$baixa['link']?>" title="como chegar" target="_BLANK"> Realidade virtual</a> ou <a href="<?=$baixa['link']?>" title="como chegar" target="_BLANK"> Realidade Aumentada</a></small>
 		      </div>
 		    </div>
 		  </div>

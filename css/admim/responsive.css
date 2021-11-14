@@ -1,0 +1,29 @@
+@media screen and (max-width: 900px) {
+  body {
+  background-color: white;
+  }
+  #title-ima img{
+  height: 2px;
+  }
+  .title-up{
+    margin: 0px 2px;
+    padding: 0px;
+  }
+  #logo{
+    height: 3rem;
+  }
+  .info img{
+
+}
+}
+@media screen and (max-width: 640px) {
+  .card-title{
+  font-size: 23px !important;
+  }
+  .info img{
+
+}
+  .text-foot{
+    overflow-wrap: break-word !important; 
+  }
+}
