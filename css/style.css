@@ -84,6 +84,7 @@ a{
     object-position: center;
 }
 footer{
-	background: yellow;
+	background: black;
 	padding: 10px;
+	color: white !important;
 }
