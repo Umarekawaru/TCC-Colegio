@@ -22,24 +22,12 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="image/image-slide/slide01.jpg" class="d-block w-60  " alt="...">
-      <div class=" d-none carousel-caption d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
     </div>
     <div class="carousel-item">
       <img src="image/image-slide/slide02.jpg" class="d-block w-60" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
     </div>
     <div class="carousel-item">
-      <img src="https://media.discordapp.net/attachments/710682226681053225/908461745125871637/87924079_p0.jpg?width=1248&height=701" class="d-block w-60" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
+      <img src="image/image-slide/slide03.jpeg" class="d-block w-60" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -56,8 +44,13 @@
 			<div class="container flex-center responsive-wrap responsive-ali justify-content-evenly">
 				<img id="about-img" src="image/sobre/architecture-3323275_640.jpg" alt="">
 				<div class="about">
-				<h1 class="titulo">Sobre elas</h1>
-				<p class="descr">Murasaki Shion e Minato Aqua são V-tubers que fazem parte da 2ª geração da Hololive. Shion, também conhecida pela comunidade como Garlic ou Kusogaki, é uma super talentosa maga das trevas de origem nobre (ou pelo menos diz que é, pois seus feitiços raramente dão certo).</p>		
+				<h1 class="titulo">Sobre a gente.</h1>
+				<p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>		
 				</div>
 			</div>
 </section>
@@ -112,10 +105,10 @@
     </section>
 <hr>
 <section id="info" class="green-b text-light">
-    <div class="container d-flex justify-content-center text-center flex-column">
+    <div class="container d-flex justify-content-center flex-wrap text-center flex-column">
       <h1>Duvidas?</h1>
        <P>Entre em contato com agente!</P>
-       <p>COLOCAR INFORMAÇÂOES AQUI</p>
+       <p>INDISPONIVEL</p>
      </div>  
 </section>
     <hr>

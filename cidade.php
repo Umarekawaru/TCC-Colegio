@@ -51,7 +51,7 @@
 		      </div>
 		      <div class="card-footer">
 		        <small class="text-muted"><a href="<?=$baixa['link']?>" title="como chegar" target="_BLANK">Click aqui para GPS!</a></small>
-		        <small class="text-muted" style="float: right;">Click aqui para ver em<a href="<?=$baixa['link']?>" title="como chegar" target="_BLANK"> Realidade virtual</a> ou <a href="<?=$baixa['link']?>" title="como chegar" target="_BLANK"> Realidade Aumentada</a></small>
+		         <small class="text-muted" style="float: right;">Click aqui para ver em<a href="inserido.php" title="realidade virtual"> Realidade virtual</a> ou <a href="inserido.php" title="realidade aumentanda" > Realidade Aumentada</a></small>
 		      </div>
 		    </div>
 		  </div>
