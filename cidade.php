@@ -35,11 +35,11 @@
 
 	<section id="image" class="flex-center">
 				<div id="text-image">
-					<h2 class="titlemid">Bem vindo a Cidade <?php if ($id == 'alta') {echo "Alta"; }else{echo "Baixa";}?></h2>
+					<h2 class="titlemid">Bem-vindo a Cidade <?php if ($id == 'alta') {echo "Alta"; }else{echo "Baixa";}?></h2>
 				</div>
 		</section>
-	<section class="blue-b">
-	<div class="container">
+	<section class="green-b">
+	<div class="container" style="margin-top: 15px;">
 		<div class="row row-cols-1 row-cols-md-3 g-4">
 			<?php foreach ($results as $baixa):  ?>
 		  <div class="col">

@@ -1,17 +1,17 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container d-flex justify-content-end">
-    <a class="navbar-brand" href="#"><img src="" alt="Imagem aqui"></a>
+    <a class="navbar-brand" href="index.php"><img src="image/logo2.jpeg" alt="Imagem aqui" height="50px"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse text-center justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" aria-current="page" href="index.php">Home</a>
-        <a class="nav-link" href="cidade.php?cidade=alta">Cidade Alta</a>
-        <a class="nav-link" href="cidade.php?cidade=baixa">Cidade Baixa</a>
-        <a class="nav-link" href="bairros.php?bairro=forte">Fortes</a>
-        <a class="nav-link" href="bairros.php?bairro=museo">Museus</a>
-        <a class="nav-link" href="admin/">Login Equipe</a>
+        <a class="nav-link fw-bolder fs-4" aria-current="page" href="index.php">Home</a>
+        <a class="nav-link fw-bolder fs-4" href="cidade.php?cidade=alta">Cidade Alta</a>
+        <a class="nav-link fw-bolder fs-4" href="cidade.php?cidade=baixa">Cidade Baixa</a>
+        <a class="nav-link fw-bolder fs-4" href="bairros.php?bairro=forte">Fortes</a>
+        <a class="nav-link fw-bolder fs-4" href="bairros.php?bairro=museo">Museus</a>
+        <a class="nav-link fw-bolder fs-4" href="admin/" target="_BLANK" style="display: none;">Login Equipe</a>
       </div>
     </div>
   </div>

@@ -30,8 +30,8 @@
 		    EM BREVE
 		  </div>
 		  <div class="card-body">
-		    <h5 class="card-title text-light">Desculpe o transtorno!</h5>
-		    <p class="card-text text-light">Essa função não foi ativada por motivos financeiros, nos desculpe o transtorno.</p>
+		    <h5 class="card-title text-light">Desculpe-nos o transtorno!</h5>
+		    <p class="card-text text-light">Essa função ainda não está dsiponível, devido a limitações financeiras.</p>
 		    <p onclick="goBack()"class="btn btn-primary">Retorne aqui!</a>
 		  </div>
 		  <div class="card-footer text-light">

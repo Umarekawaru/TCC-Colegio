@@ -12,7 +12,7 @@
 <body>
 	<?php include_once("navbar.php") ?>
 	<!--Slide-->
-<section id="carousel" class="green-b">
+<section id="carousel" class="ciano-b" >
 	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators ">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -40,76 +40,73 @@
   </button>
 </div>
 </section>
-<section id="about" class="blue-b">
-			<div class="container flex-center responsive-wrap responsive-ali justify-content-evenly">
-				<img id="about-img" src="image/sobre/architecture-3323275_640.jpg" alt="">
-				<div class="about">
-				<h1 class="titulo">Sobre a gente.</h1>
-				<p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>		
-				</div>
-			</div>
-</section>
-<section class="green-b" >
+<section class="ciano-b" >
+  <div>
+    <h2 class="text-center fs-1" style="margin-bottom: 30px;">Pontos da Cidade</h2>
+  </div>
   <div class="container flex-center">
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
-          <div class="card">
+          <div class="card h-100">
             <a href="cidade.php?cidade=baixa" title="">
             <img src="image/card-fixos/cidade-baixa.jpg" class="card-img-top" alt="cidade-alta">
             </a>
-            <div class="card-body green-b">
+            <div class="card-body">
               <h5 class="card-title text-center">Cidade Baixa</h5>
-              <p class="card-text green-b">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">A cidade baixa é a parte litorânea de Salvador, onde está localizada os principais pontos turísticos da cidade. Ela emana beleza, africanidade e recursos naturais.</p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card">
+          <div class="card h-100">
             <a href="cidade.php?cidade=alta" id="ima-hover">
             <img src="image/card-fixos/cidade-alta.jpg" class="card-img-top" alt="cidade-baixa">
             </a>
-            <div class="card-body green-b">
+            <div class="card-body">
               <h5 class="card-title text-center">Cidade Alta</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">A cidade alta é parte mais moderna da cidade. Tem como ligação entre a cidade baixa o elevador Lacerda e tem alta relevância histórica para cidade. Representa a organização e pureza.</p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card">
+          <div class="card h-100">
             <a href="bairros.php?bairro=forte" title="">
             <img src="image/card-fixos/forte.jpg" class="card-img-top" alt="Aperte aqui para ir pro forte">
             </a>
-            <div class="card-body green-b">
-              <h5 class="card-title text-center">Forte</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <div class="card-body">
+              <h5 class="card-title text-center">Fortes</h5>
+              <p class="card-text">A cidade de Salvador tem como pontos turísticos os fortes, que atualmente representam a história dos antepassados e fundadores da cidade.</p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card">
+          <div class="card h-100">
             <a href="bairros.php?bairro=museo" title="">
             <img src="image/card-fixos/ilha.jpg" class="card-img-top" alt="Aperte aqui para ir pro museo">
-            </a><div class="card-body green-b">
+            </a><div class="card-body">
               <h5 class="card-title text-center">Museus</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Os museus de Salvador representam a cultura musical, artística, culinária e os costumes.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
     </section>
-<hr>
-<section id="info" class="green-b text-light">
-    <div class="container d-flex justify-content-center flex-wrap text-center flex-column">
-      <h1>Duvidas?</h1>
-       <P>Entre em contato com agente!</P>
-       <p>INDISPONIVEL</p>
-     </div>  
-</section>
-    <hr>
+    <section id="about" class="blue-b">
+      <div class="container flex-center responsive-wrap responsive-ali justify-content-evenly">
+        <!--<img id="about-img" src="image/sobre/architecture-3323275_640.jpg" alt="">-->
+        <div class="about">
+        <h1 class="titulo">Sobre nós</h1>
+        <p class="descr" style="Font-weight: bold;">Alunos do Ceep-Isaías Alves, desenvolveram a proposta como Trabalho de Conclusão de Curso, com objetivo de promover acessibilidade cultural de forma inovadora, visto que o Brasil tem a necessidade de intervir na problemática.</p>    
+        </div>
+      </div>
+    </section>
+    <section id="info" class="ciano-b text-dark">
+        <div class="container d-flex justify-content-center flex-wrap text-center flex-column">
+          <h1>Dúvidas?</h1>
+           <P>Entre em contato com a gente!</P>
+           <p><a href="https://forms.gle/55NYDZx2zUGPEfDTA" class="link-dark button-red" title="formu-contato">Aperte Aqui</a></p>
+         </div>  
+    </section>
+
 <?php include_once('footer.php') ?>

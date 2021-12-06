@@ -35,12 +35,12 @@
 
 	<section id="image" class="flex-center">
 				<div id="text-image">
-					<h2 class="titlemid">Bem vindo aos <?php if ($id == 'forte') {echo "Fortes"; }else{echo "Museus";}?></h2>
+					<h2 class="titlemid">Bem-vindo aos <?php if ($id == 'forte') {echo "Fortes"; }else{echo "Museus";}?></h2>
 				</div>
 		</section>
-	<section class="blue-b">
-	<div class="container">
-		<div class="row row-cols-1 row-cols-md-3 g-4">
+	<section class="green-b">
+	<div class="container" style="margin-top: 15px;">
+		<div class="row row-cols-1 row-cols-md-3 g-5">
 			<?php foreach ($results as $baixa):  ?>
 		  <div class="col">
 		    <div class="card h-100">
