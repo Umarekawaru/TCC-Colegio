@@ -22,11 +22,21 @@
 	if ($id == "forte") {
 	$stmt = $conn->prepare("SELECT * FROM local WHERE local = :ID LIMIT 0,9");
 	$stmt->execute(array('ID' => $id));
-	$results = $stmt->fetchALL(PDO::FETCH_ASSOC);
-	}elseif ($id == "museo"){
+	$results = $stmt->fetchALL(PDO::FETCH_ASSOC);?>
+	<style type="text/css">
+		#image{
+			background-image: url(image/forte.jpg) !important;
+		}
+	</style>
+	<?php }elseif ($id == "museo"){
 		$stmt = $conn->prepare("SELECT * FROM local WHERE local = :ID LIMIT 0,9");
 	$stmt->execute(array('ID' => $id));
-	$results = $stmt->fetchALL(PDO::FETCH_ASSOC);
+	$results = $stmt->fetchALL(PDO::FETCH_ASSOC);?>
+	<style type="text/css">
+		#image{
+			background-image: url(image/museu.jpg) !important;
+		}
+	</style><?php
 	}else {
 		header('Location: index.php');
 	};

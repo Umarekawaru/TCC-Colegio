@@ -22,7 +22,13 @@
 	if ($id == "alta") {
 	$stmt = $conn->prepare("SELECT * FROM cidade WHERE local = :ID LIMIT 0,9");
 	$stmt->execute(array('ID' => $id));
-	$results = $stmt->fetchALL(PDO::FETCH_ASSOC);
+	$results = $stmt->fetchALL(PDO::FETCH_ASSOC);?>
+	<style type="text/css">
+		#image{
+			background-image: url(image/tororo.jpg) !important;
+			width: auto !important;
+		}
+	</style><?php
 	}elseif ($id == "baixa"){
 		$stmt = $conn->prepare("SELECT * FROM cidade WHERE local = :ID LIMIT 0,9");
 	$stmt->execute(array('ID' => $id));
