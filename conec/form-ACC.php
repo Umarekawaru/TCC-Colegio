@@ -6,7 +6,8 @@
 	<title>Formuario de cadrastro</title>
 	<link rel="stylesheet" href="../body/admin/header-admin.php">
 </head>
-<?php/*
+<?php 
+/*
 session_start();
 if ($_SESSION['logado'] != true) {
 	session_destroy();

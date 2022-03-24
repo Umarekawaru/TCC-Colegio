@@ -1,7 +1,7 @@
 <?php
 include('../conec/connect.php');
 
-$id = 
+
 
 $stmt = $conn->prepare("SELECT * FROM cidade");
 $stmt->execute();

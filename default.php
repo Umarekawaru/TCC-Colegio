@@ -215,7 +215,6 @@
                 background-size: 100px;
             }
         }
-        }
     </style>
 </head>
 
