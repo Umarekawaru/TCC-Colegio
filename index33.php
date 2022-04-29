@@ -48,7 +48,7 @@
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
           <div class="card h-100">
-            <a href="cidade.php?cidade=baixa" title="">
+            <a href="cidade/baixa" title="">
             <img src="image/card-fixos/cidade-baixa.jpg" class="card-img-top" alt="cidade-alta">
             </a>
             <div class="card-body">
@@ -59,7 +59,7 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <a href="cidade.php?cidade=alta" id="ima-hover">
+            <a href="cidade/alta" id="ima-hover">
             <img src="image/card-fixos/cidade-alta.jpg" class="card-img-top" alt="cidade-baixa">
             </a>
             <div class="card-body">
@@ -70,7 +70,7 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <a href="bairros.php?bairro=forte" title="">
+            <a href="bairros/forte" title="">
             <img src="image/card-fixos/forte.jpg" class="card-img-top" alt="Aperte aqui para ir pro forte">
             </a>
             <div class="card-body">
@@ -81,7 +81,7 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <a href="bairros.php?bairro=museo" title="">
+            <a href="bairros/museo" title="">
             <img src="image/muse/7b38bd4806253bb1d275ab48bbe38588.jpg" class="card-img-top" alt="Aperte aqui para ir pro museo">
             </a><div class="card-body">
               <h5 class="card-title text-center">Museus</h5>

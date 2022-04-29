@@ -6,11 +6,11 @@
     </button>
     <div class="collapse navbar-collapse text-center justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link fw-bolder fs-4" aria-current="page" href="index.php">Home</a>
-        <a class="nav-link fw-bolder fs-4" href="cidade.php?cidade=alta">Cidade Alta</a>
-        <a class="nav-link fw-bolder fs-4" href="cidade.php?cidade=baixa">Cidade Baixa</a>
-        <a class="nav-link fw-bolder fs-4" href="bairros.php?bairro=forte">Fortes</a>
-        <a class="nav-link fw-bolder fs-4" href="bairros.php?bairro=museo">Museus</a>
+        <a class="nav-link fw-bolder fs-4" aria-current="page" href="/">Home</a>
+        <a class="nav-link fw-bolder fs-4" href="cidade/alta">Cidade Alta</a>
+        <a class="nav-link fw-bolder fs-4" href="cidade/baixa">Cidade Baixa</a>
+        <a class="nav-link fw-bolder fs-4" href="bairros/forte">Fortes</a>
+        <a class="nav-link fw-bolder fs-4" href="bairros/museo">Museus</a>
         <a class="nav-link fw-bolder fs-4" href="admin/" target="_BLANK" style="display: none;">Login Equipe</a>
       </div>
     </div>

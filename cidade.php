@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<base href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/">
 	<title></title>
   	<link rel="stylesheet" type="text/css" href="css/style.css">
   	<link rel="stylesheet" type="text/css" href="css/image.css">
@@ -34,7 +35,7 @@
 	$stmt->execute(array('ID' => $id));
 	$results = $stmt->fetchALL(PDO::FETCH_ASSOC);
 	}else {
-		header('Location: index.php');
+		header("Location:/index.php");
 	};
 ?>
 <body>
